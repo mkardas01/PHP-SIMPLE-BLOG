@@ -1,0 +1,165 @@
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-content-posts{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+
+.post{
+  max-width: 500px;
+  margin: 30px 30px;
+  padding-bottom: 10px;
+  background-color: #282828;
+  border-radius: 30px;
+}
+
+.post h2{
+  font-size: min(calc(24px + 0.390625vw),27px);
+}
+
+.under-img{
+  padding: 5px 20px 20px 20px;
+  color:#908d96;
+}
+
+.post-stats{
+  font-size: 0.9rem;
+}
+
+.blog-post-img{
+  height: 200px;
+}
+
+.blog-post-img img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px 30px 0 0;
+    object-position:right;
+  
+}
+
+.blog-post-features{
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  max-width:250px;
+  font-size: calc(10px + 0.390625vw);
+  transform: translate(30px, -50px);
+}
+
+.blog-post-features span
+{
+  border-radius: 30px;
+}
+
+.blog-post-category{
+  background-color: white;
+  padding: 10px;
+  
+}
+
+.blog-post-favorite{
+  background-color: #8E44AD;
+  margin-left: 10px;
+  padding: 10px 20px;
+  color: #F7DC6F;
+  transition: all 0.1s ;
+}
+
+.pink-color{
+  color:#8E44AD;
+}
+
+.blog-post-info{
+  display: flex;
+  justify-content: space-between;
+  font-size: calc(20px + 0.390625vw);
+}
+
+.blog-post-info div:nth-child(1) {
+  justify-self: flex-start;
+}
+
+.blog-post-info div:nth-child(2) {
+  justify-self: flex-end;
+}
+
+.blog-post-text{
+  display: flex;
+  transition: all 0.1s ;
+}
+
+.blog-post-text span:nth-child(2){
+  align-self: flex-end;
+}
+
+.blog-post-info-left{
+  margin-right: 30px;
+}
+
+.blog-post-info-left, .blog-post-info-right{
+  flex-direction: row;
+}
+
+.blog-post-info-left span:nth-child(1){
+  margin-right: 10px;
+}
+
+.blog-post-info-right span:nth-child(1){
+  margin-right: 10px;
+}
+
+.blog-post-tittle{
+  color:white;
+}
+
+div a:hover{
+  cursor: pointer;
+
+}
+
+.blog-post-favorite:active{
+  background-color: #5944ad;
+}
+
+@media (min-width: 880px){
+  .blog-content-posts{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 30px;
+
+  }
+  .post{
+    max-width: 100%;
+    margin: 3% 7%;
+  }
+
+  .blog-post-features{
+    font-size: min(calc(9px + 0.390625vw),14px);
+  }
+
+}
+
+@media(min-width:1280px)
+{
+
+  .blog-content-posts{
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+  }
+
+  .blog-post-features{
+    font-size: min(calc(8px + 0.390625vw),16px);
+  }
+
+}

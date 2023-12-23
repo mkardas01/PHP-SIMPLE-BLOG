@@ -1,0 +1,76 @@
+@keyframes fadeInOut {
+    from { max-height: 0; opacity: 0; }
+    to { max-height: 200px; opacity: 1; }
+}
+
+body{
+    height: 100vh;
+
+}
+
+
+
+label{
+    padding-bottom: 10px;
+}
+
+.btn{
+    border: 1px #a688fa solid;
+}
+
+.selected{
+    background-color: #5e43f3;
+    color: white;
+    border:none;
+}
+
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+
+}
+
+.form-div{
+    max-width: 380px;
+    width: 100%;
+    padding: 50px 50px 50px 50px;
+    border-radius: 30px;
+    margin-top:40px;
+    background-color: #282828;
+    color:#908d96;
+}
+.form-group{
+    margin-bottom: 40px;
+}
+
+.form-submit{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.login-register{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#password2-div {
+    transition: all 0.5s ease-in-out;
+    animation: fadeInOut 0.5s ease-in-out; /* Apply the animation */
+}
+
+#status{
+    padding-bottom: 10px;
+}
+
+
+@media (min-width: 620px){
+    .form-div {
+        max-width: 500px;
+        width: 100%;
+    }
+}
